@@ -52,10 +52,11 @@ public class RecyclerViewMenuAdapter extends RecyclerView.Adapter<RecyclerViewMe
                     // pake activity details dulu
                     Intent intentAgenda = new Intent(mContext, DetailsProfileActivity.class);
                     mContext.startActivity(intentAgenda);
-                }else if (position==8){
-                    //open activity rating
-                    Intent intentQR = new Intent(mContext, MyQRActivity.class);
-                    mContext.startActivity(intentQR);
+                }else if (position==2){
+                    // gallery
+                    //open activity my Booking activity
+                    Intent intentMyBooking = new Intent(mContext, MyBookingActivity.class);
+                    mContext.startActivity(intentMyBooking);
                 }else{
                     Intent intentAgenda = new Intent(mContext, DetailsProfileActivity.class);
                     mContext.startActivity(intentAgenda);

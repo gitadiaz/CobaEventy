@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyBookingActivity"
+    android:background="@color/blue">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbarMyBooking"
+        android:background="@color/blue"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="My Booking"
+        app:titleMarginStart="40dp"
+        >
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_below="@id/toolbarMyBooking"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_top"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        >
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            android:id="@+id/tabLayoutMyBooking"
+            app:tabTextColor="#2d2d2d"
+            app:tabIndicatorColor="@color/blue_medium"
+        />
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewPagerMyBooking">
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
