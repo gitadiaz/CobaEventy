@@ -1,4 +1,4 @@
-package inggitsemut.cobaeventy;
+package inggitsemut.cobaeventy.Activity;
 
 import android.content.Intent;
 import android.os.Handler;
@@ -16,7 +16,12 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import inggitsemut.cobaeventy.Adapter.BannerAdapterPager;
+import inggitsemut.cobaeventy.Adapter.RecyclerViewMenuAdapter;
+import inggitsemut.cobaeventy.Models.Menu;
+import inggitsemut.cobaeventy.R;
+
+public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
 
     // Details Profile
     Button btnDetailsProfile;
@@ -36,14 +41,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home);
 
         // Details Profile
         btnDetailsProfile = findViewById(R.id.btnDetailsProfile);
         btnDetailsProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentDetailsProfile = new Intent(MainActivity.this, DetailsProfileActivity.class);
+                Intent intentDetailsProfile = new Intent(HomeActivity.this, DetailsProfileActivity.class);
                 startActivity(intentDetailsProfile);
 
             }

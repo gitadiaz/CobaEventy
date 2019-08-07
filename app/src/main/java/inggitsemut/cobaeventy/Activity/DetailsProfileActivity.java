@@ -1,7 +1,9 @@
-package inggitsemut.cobaeventy;
+package inggitsemut.cobaeventy.Activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import inggitsemut.cobaeventy.R;
 
 public class DetailsProfileActivity extends AppCompatActivity {
 

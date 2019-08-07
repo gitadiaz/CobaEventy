@@ -9,18 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MyBookingActivity"
+        <activity android:name=".Activity.MyBookingActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity
-            android:name=".MyQRActivity"
-            android:parentActivityName=".MainActivity"
+            android:name=".Activity.MyQRActivity"
+            android:parentActivityName=".Activity.HomeActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".DetailsProfileActivity"
-            android:parentActivityName=".MainActivity"
+            android:name=".Activity.DetailsProfileActivity"
+            android:parentActivityName=".Activity.HomeActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Activity.HomeActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

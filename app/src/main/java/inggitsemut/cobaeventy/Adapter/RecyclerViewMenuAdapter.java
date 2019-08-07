@@ -1,9 +1,8 @@
-package inggitsemut.cobaeventy;
+package inggitsemut.cobaeventy.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -13,6 +12,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
+
+import inggitsemut.cobaeventy.Activity.DetailsProfileActivity;
+import inggitsemut.cobaeventy.Models.Menu;
+import inggitsemut.cobaeventy.Activity.MyBookingActivity;
+import inggitsemut.cobaeventy.Activity.MyQRActivity;
+import inggitsemut.cobaeventy.R;
 
 public class RecyclerViewMenuAdapter extends RecyclerView.Adapter<RecyclerViewMenuAdapter.MyViewHolder> {
 

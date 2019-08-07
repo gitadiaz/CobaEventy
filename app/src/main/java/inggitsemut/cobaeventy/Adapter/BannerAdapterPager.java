@@ -1,4 +1,4 @@
-package inggitsemut.cobaeventy;
+package inggitsemut.cobaeventy.Adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -12,6 +12,8 @@ import com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import inggitsemut.cobaeventy.R;
 
 public class BannerAdapterPager extends PagerAdapter {
 

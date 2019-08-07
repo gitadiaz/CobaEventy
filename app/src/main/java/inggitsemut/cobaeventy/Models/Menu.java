@@ -1,4 +1,4 @@
-package inggitsemut.cobaeventy;
+package inggitsemut.cobaeventy.Models;
 
 public class Menu {
 

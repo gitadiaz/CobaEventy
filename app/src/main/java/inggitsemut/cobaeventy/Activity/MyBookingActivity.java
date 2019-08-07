@@ -1,11 +1,16 @@
-package inggitsemut.cobaeventy;
+package inggitsemut.cobaeventy.Activity;
 
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
 import android.widget.Toolbar;
+
+import inggitsemut.cobaeventy.Adapter.ViewPagerMyBookingAdapter;
+import inggitsemut.cobaeventy.Fragment.FragmentCancelledBooking;
+import inggitsemut.cobaeventy.Fragment.FragmentPaidBooking;
+import inggitsemut.cobaeventy.Fragment.FragmentUnpaidBooking;
+import inggitsemut.cobaeventy.R;
 
 public class MyBookingActivity extends AppCompatActivity {
 

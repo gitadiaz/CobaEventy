@@ -1,4 +1,4 @@
-package inggitsemut.cobaeventy;
+package inggitsemut.cobaeventy.Adapter;
 
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
