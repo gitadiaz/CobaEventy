@@ -10,16 +10,16 @@ import android.view.ViewGroup;
 
 import inggitsemut.cobaeventy.R;
 
-public class FragmentCancelledBooking extends Fragment {
-    View view;
+public class PaidBookingFragment extends Fragment {
 
-    public FragmentCancelledBooking() {
+    View view;
+    public PaidBookingFragment() {
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.cancelled_booking_fragment, container, false);
+        view = inflater.inflate(R.layout.paid_booking_fragment, container, false);
         return view;
     }
 }

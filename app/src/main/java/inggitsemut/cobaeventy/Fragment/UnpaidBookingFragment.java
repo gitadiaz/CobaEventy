@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 
 import inggitsemut.cobaeventy.R;
 
-public class FragmentUnpaidBooking extends Fragment {
+public class UnpaidBookingFragment extends Fragment {
     View view;
 
-    public FragmentUnpaidBooking() {
+    public UnpaidBookingFragment() {
     }
 
     @Nullable

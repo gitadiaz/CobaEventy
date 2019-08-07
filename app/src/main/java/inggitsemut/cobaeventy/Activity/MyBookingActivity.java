@@ -7,9 +7,9 @@ import android.os.Bundle;
 import android.widget.Toolbar;
 
 import inggitsemut.cobaeventy.Adapter.ViewPagerMyBookingAdapter;
-import inggitsemut.cobaeventy.Fragment.FragmentCancelledBooking;
-import inggitsemut.cobaeventy.Fragment.FragmentPaidBooking;
-import inggitsemut.cobaeventy.Fragment.FragmentUnpaidBooking;
+import inggitsemut.cobaeventy.Fragment.CancelledBookingFragment;
+import inggitsemut.cobaeventy.Fragment.PaidBookingFragment;
+import inggitsemut.cobaeventy.Fragment.UnpaidBookingFragment;
 import inggitsemut.cobaeventy.R;
 
 public class MyBookingActivity extends AppCompatActivity {
@@ -32,9 +32,9 @@ public class MyBookingActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.viewPagerMyBooking);
         ViewPagerMyBookingAdapter adapter = new ViewPagerMyBookingAdapter(getSupportFragmentManager());
         // Adding Fragments
-        adapter.AddFragment(new FragmentUnpaidBooking(), "Unpaid");
-        adapter.AddFragment(new FragmentPaidBooking(), "Paid");
-        adapter.AddFragment(new FragmentCancelledBooking(), "Cancel");
+        adapter.AddFragment(new UnpaidBookingFragment(), "Unpaid");
+        adapter.AddFragment(new PaidBookingFragment(), "Paid");
+        adapter.AddFragment(new CancelledBookingFragment(), "Cancel");
         // Adapter setup
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
