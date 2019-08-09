@@ -48,9 +48,9 @@ public class IntroActivity extends AppCompatActivity {
 
         // fill list screen
         final List<ScreenItem> mList = new ArrayList<>();
-        mList.add(new ScreenItem("Scan", "Lorem ipsum dolor sit amet, eu nihil prompta vix, ne tacimates imperdiet vel, eu vis simul veniam regione. Postulant efficiendi sed at, eius liber bonorum id quo, mei ad noluisse patrioque. Nec alia dicit nostro ea, lucilius mandamus electram at usu, n.", R.drawable.scan));
-        mList.add(new ScreenItem("Search", "Lorem ipsum dolor sit amet, eu nihil prompta vix, ne tacimates imperdiet vel, eu vis simul veniam regione. Postulant efficiendi sed at, eius liber bonorum id quo, mei ad noluisse patrioque. Nec alia dicit nostro ea, lucilius mandamus electram at usu, n.", R.drawable.search));
-        mList.add(new ScreenItem("Navigate", "Lorem ipsum dolor sit amet, eu nihil prompta vix, ne tacimates imperdiet vel, eu vis simul veniam regione. Postulant efficiendi sed at, eius liber bonorum id quo, mei ad noluisse patrioque. Nec alia dicit nostro ea, lucilius mandamus electram at usu, n.", R.drawable.navigate));
+        mList.add(new ScreenItem("Scan", "Lorem ipsum dolor sit amet, eu nihil prompta vix, ne tacimates imperdiet vel, eu vis simul veniam regione. Postulant efficiendi sed at, eius liber bonorum id quo, mei ad noluisse patrioque. ", R.drawable.scan));
+        mList.add(new ScreenItem("Search", "Lorem ipsum dolor sit amet, eu nihil prompta vix, ne tacimates imperdiet vel, eu vis simul veniam regione. Postulant efficiendi sed at, eius liber bonorum id quo, mei ad noluisse patrioque.", R.drawable.search));
+        mList.add(new ScreenItem("Navigate", "Lorem ipsum dolor sit amet, eu nihil prompta vix, ne tacimates imperdiet vel, eu vis simul veniam regione. Postulant efficiendi sed at, eius liber bonorum id quo, mei ad noluisse patrioque.", R.drawable.navigate));
 
         // setup viewpager
         viewPagerIntro = findViewById(R.id.viewPagerIntroSlider);

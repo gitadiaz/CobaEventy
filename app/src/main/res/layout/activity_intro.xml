@@ -22,7 +22,7 @@
         android:layout_above="@id/btn_next"
         app:tabIndicator="@null"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="32dp"
         android:layout_marginEnd="8dp"
         app:tabGravity="fill"
         app:tabBackground="@drawable/indicator_selector">
@@ -33,17 +33,17 @@
         android:id="@+id/btn_next"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Next"
-        android:background="@drawable/rounded_yellow"
-        android:textSize="16sp"
-        android:drawableRight="@drawable/ic_arrow_forward"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
         android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:layout_marginBottom="28dp"
-        android:layout_marginRight="48dp"
-        android:layout_marginLeft="48dp"
-        />
+        android:background="@drawable/rounded_yellow"
+        android:drawableRight="@drawable/ic_arrow_forward"
+        android:fontFamily="@font/montserrat_regular"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="Next"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/btn_get_started"
@@ -52,14 +52,15 @@
         android:text="Get Started"
         android:background="@drawable/rounded_yellow"
         android:textSize="16sp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
         android:layout_centerHorizontal="true"
         android:visibility="invisible"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="28dp"
-        android:layout_marginRight="48dp"
-        android:layout_marginLeft="48dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/montserrat_regular"
         />
 
 </RelativeLayout>

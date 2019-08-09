@@ -25,6 +25,7 @@
         android:textSize="24sp"
         android:text="Judul"
         android:textColor="#ffffff"
+        android:fontFamily="@font/montserrat_regular"
         android:textStyle="bold"/>
 
     <TextView
@@ -34,8 +35,9 @@
         android:layout_below="@id/txt_title_intro"
         android:gravity="center"
         android:padding="16dp"
-        android:text="Lorem ipsum dolor sit amet, eu nihil prompta vix, ne tacimates imperdiet vel, eu vis simul veniam regione. Postulant efficiendi sed at, eius liber bonorum id quo, mei ad noluisse patrioque. Nec alia dicit nostro ea, lucilius mandamus electram at usu, n."
+        android:text="Lorem ipsum dolor sit amet, eu nihil prompta vix, ne tacimates imperdiet vel, eu vis simul veniam regione. Postulant efficiendi sed at, eius liber bonorum id quo, mei ad noluisse patrioque."
         android:textColor="#ffffff"
         android:textAlignment="center"
+        android:fontFamily="@font/montserrat_regular"
         android:lineSpacingExtra="4dp"/>
 </RelativeLayout>
