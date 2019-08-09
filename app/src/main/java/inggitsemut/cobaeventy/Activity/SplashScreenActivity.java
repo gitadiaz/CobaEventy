@@ -22,7 +22,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
         AlphaAnimation animation = new AlphaAnimation(0f, 1f); //tipe data float. opacity dari angka berapa ke angka berapa
         animation.setFillAfter(true); // ngikutin animasi terakhirnya. untuk menghindari looping
-        animation.setDuration(1000); // mili sec
+        animation.setDuration(750); // mili sec
         logo.startAnimation(animation);
 
         new Handler().postDelayed(new Runnable() {
