@@ -134,7 +134,7 @@ public class IntroActivity extends AppCompatActivity {
 
     private void loadLastScreen(){
         btnGetStarted.setVisibility(View.VISIBLE);
-        tabLayoutIndicator.setVisibility(View.INVISIBLE);
+        tabLayoutIndicator.setVisibility(View.VISIBLE);
         btnNext.setVisibility(View.INVISIBLE);
 
         // button animation
