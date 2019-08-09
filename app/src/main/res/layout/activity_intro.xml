@@ -65,7 +65,7 @@
         android:paddingRight="16dp"
         android:layout_above="@id/layout_bawah"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="8dp"
         android:visibility="invisible"
         />
 
