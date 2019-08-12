@@ -14,7 +14,7 @@
         android:background="@color/blue"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:title="My Booking"
-        app:titleMarginStart="36dp"
+        app:titleMarginStart="16dp"
         >
     </android.support.v7.widget.Toolbar>
 
@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/rounded_top"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:orientation="vertical"
         >
 
