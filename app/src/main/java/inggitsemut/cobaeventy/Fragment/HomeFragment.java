@@ -60,7 +60,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         mImageUrls.add("https://jadwalevent.web.id/wp-content/uploads/2018/06/Indonesia-International-Book-Fair-2018.jpg");
         mImageUrls.add("https://jadwalevent.web.id/wp-content/uploads/2015/09/Jakarta-Culinary-Passport-%E2%80%9CAsian-Adventure%E2%80%9D-2015.jpg");
         mImageUrls.add("https://s3-ap-southeast-1.amazonaws.com/loket-production-sg/images/banner/20190709103135_5d240a9792416.jpg");
-        mImageUrls.add("https://www.indonesia.travel/content/dam/indtravelrevamp/en/news-events/news/wonderful-indonesia-festival-in-bangkok-legends-cultural-shows-and-scrumptious-food/Article-1.jpg");
+//        mImageUrls.add("https://www.indonesia.travel/content/dam/indtravelrevamp/en/news-events/news/wonderful-indonesia-festival-in-bangkok-legends-cultural-shows-and-scrumptious-food/Article-1.jpg");
     }
 
 }
