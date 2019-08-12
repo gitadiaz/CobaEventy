@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_above="@id/btn_next"
-        />
+        android:layout_marginBottom="3dp" />
 
     <android.support.design.widget.TabLayout
         android:id="@+id/tab_indicator_intro"
