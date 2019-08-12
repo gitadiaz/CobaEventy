@@ -104,7 +104,7 @@ public class IntroActivity extends AppCompatActivity {
         btnGetStarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentMyActivity = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intentMyActivity = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(intentMyActivity);
 
                 // buat user ga akses intro lagi kalo udah pernah buka
