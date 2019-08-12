@@ -12,7 +12,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/toolbarMyBooking"
         android:background="@color/blue"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:theme="@style/ToolbarTheme"
+        app:titleTextColor="@color/white"
         app:title="My Booking"
         app:titleMarginStart="16dp"
         >
