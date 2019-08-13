@@ -29,7 +29,7 @@ import inggitsemut.cobaeventy.R;
 
 public class LoginActivity extends AppCompatActivity {
     private Button btnSignIn;
-    private TextView btnSignUp;
+    private TextView btnSignUp, btnForgotPassword;
     private LoginButton btnLoginFacebook;
 
     private CallbackManager callbackManager;
@@ -42,6 +42,7 @@ public class LoginActivity extends AppCompatActivity {
         btnSignIn = findViewById(R.id.btn_sign_in);
         btnSignUp = findViewById(R.id.btn_sign_up);
         btnLoginFacebook = findViewById(R.id.login_button_facebook);
+        btnForgotPassword = findViewById(R.id.btn_forgot_password);
 
         callbackManager = CallbackManager.Factory.create();
         btnLoginFacebook.setReadPermissions(Arrays.asList("email", "public_profile"));
@@ -81,6 +82,14 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentSignUp = new Intent(LoginActivity.this, SignUpActivity.class);
                 startActivity(intentSignUp);
+            }
+        });
+
+        btnForgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentForgotPassword = new Intent(LoginActivity.this, ForgotPasswordActivity.class);
+                startActivity(intentForgotPassword);
             }
         });
     }
