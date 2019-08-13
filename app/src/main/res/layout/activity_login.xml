@@ -97,16 +97,24 @@
                 android:text="OR" />
         </RelativeLayout>
 
-        <Button
-            android:id="@+id/btn_facebook"
-            android:layout_width="match_parent"
+        <!--<Button-->
+            <!--android:id="@+id/btn_facebook"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:background="@color/blue"-->
+            <!--android:text="Log in with Facebook"-->
+            <!--android:fontFamily="@font/montserrat_regular"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@color/white" />-->
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button_facebook"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@color/blue"
-            android:text="Log in with Facebook"
-            android:fontFamily="@font/montserrat_regular"
-            android:textAllCaps="false"
-            android:textColor="@color/white" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
     </LinearLayout>
 
     <LinearLayout

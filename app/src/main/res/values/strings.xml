@@ -6,4 +6,7 @@
     <string name="booking">Booking</string>
     <string name="inbox">Inbox</string>
     <string name="profile">Profile</string>
+
+    <string name="facebook_app_id">2521626878154553</string> <string name="fb_login_protocol_scheme">fb2521626878154553</string>
+
 </resources>
