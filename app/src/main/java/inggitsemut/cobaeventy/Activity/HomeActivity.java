@@ -28,8 +28,6 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     TabLayout tabLayoutIndicator;
     int position = 0;
 
-    List<Integer> dataImage = new ArrayList<>();
-
     // timer pada banner
     private Timer timer;
     private int current_position = 0;
