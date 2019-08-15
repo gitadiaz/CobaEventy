@@ -51,7 +51,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onSuccess(LoginResult loginResult) {
 //                loaduserProfile(AccessToken.getCurrentAccessToken());
-                Intent intentLogin = new Intent(LoginActivity.this, MainActivity.class);
+                Intent intentLogin = new Intent(LoginActivity.this, HomeActivity.class);
                 startActivity(intentLogin);
                 finish();
             }
@@ -71,7 +71,7 @@ public class LoginActivity extends AppCompatActivity {
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentHome = new Intent(LoginActivity.this, MainActivity.class);
+                Intent intentHome = new Intent(LoginActivity.this, HomeActivity.class);
                 startActivity(intentHome);
                 Toast.makeText(LoginActivity.this, "Sign in Success", Toast.LENGTH_SHORT).show();
             }
@@ -123,7 +123,7 @@ public class LoginActivity extends AppCompatActivity {
                     String id = object.getString("id");
                     String image_url = "https://graph.facebook.com/"+id+"/picture?type=normal";
 
-                    Intent intentLogin = new Intent(LoginActivity.this, MainActivity.class);
+                    Intent intentLogin = new Intent(LoginActivity.this, HomeActivity.class);
                     startActivity(intentLogin);
 
 

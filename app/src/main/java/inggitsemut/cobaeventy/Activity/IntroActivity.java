@@ -34,7 +34,7 @@ public class IntroActivity extends AppCompatActivity {
 
         //cek udah pernah buka aplikasinya atau belum
         if (restorePrefData()){
-            Intent intentMyActivity = new Intent(getApplicationContext(), MainActivity.class);
+            Intent intentMyActivity = new Intent(getApplicationContext(), HomeActivity.class);
             startActivity(intentMyActivity);
             finish();
         }
