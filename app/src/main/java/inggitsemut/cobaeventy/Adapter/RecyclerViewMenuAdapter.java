@@ -44,33 +44,33 @@ public class RecyclerViewMenuAdapter extends RecyclerView.Adapter<RecyclerViewMe
         holder.img_menu.setImageResource(mData.get(position).getImage());
 
         // Set Click on Listener
-//        holder.cardViewMenu.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                if (position==0){
-//                    Intent intentQR = new Intent(mContext, MyQRActivity.class);
-//                    mContext.startActivity(intentQR);
-//                }
-//                else if (position==1){
-//                    // open activity agenda
-//                    // pake activity details dulu
-//                    Intent intentAgenda = new Intent(mContext, DetailsProfileActivity.class);
-//                    mContext.startActivity(intentAgenda);
-//                }else if (position==2){
-//                    // gallery
-//                    //open activity my Booking activity
-//                    Intent intentMyBooking = new Intent(mContext, MyBookingActivity.class);
-//                    mContext.startActivity(intentMyBooking);
-//                }else{
-//                    Intent intentAgenda = new Intent(mContext, DetailsProfileActivity.class);
-//                    mContext.startActivity(intentAgenda);
-//                }
-//
-//                //dst
-//
-//            }
-//        });
+        holder.cardViewMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (position==0){
+                    Intent intentQR = new Intent(mContext, MyQRActivity.class);
+                    mContext.startActivity(intentQR);
+                }
+                else if (position==1){
+                    // open activity agenda
+                    // pake activity details dulu
+                    Intent intentAgenda = new Intent(mContext, DetailsProfileActivity.class);
+                    mContext.startActivity(intentAgenda);
+                }else if (position==2){
+                    // gallery
+                    //open activity my Booking activity
+                    Intent intentMyBooking = new Intent(mContext, MyBookingActivity.class);
+                    mContext.startActivity(intentMyBooking);
+                }else{
+                    Intent intentAgenda = new Intent(mContext, DetailsProfileActivity.class);
+                    mContext.startActivity(intentAgenda);
+                }
+
+                //dst
+
+            }
+        });
 
     }
 
@@ -90,7 +90,7 @@ public class RecyclerViewMenuAdapter extends RecyclerView.Adapter<RecyclerViewMe
 
             tv_menu_title = itemView.findViewById(R.id.id_menu_title);
             img_menu = itemView.findViewById(R.id.id_menu_img);
-//            cardViewMenu = itemView.findViewById(R.id.cardview_menu_id);
+            cardViewMenu = itemView.findViewById(R.id.cardview_menu_id);
         }
 
     }

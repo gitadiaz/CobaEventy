@@ -12,7 +12,8 @@ public class DetailsProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details_profile);
 
-        getSupportActionBar().setTitle("Profile");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setTitle("Profile");
+//        getSupportActionBar().setTitle("Profile");
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }
