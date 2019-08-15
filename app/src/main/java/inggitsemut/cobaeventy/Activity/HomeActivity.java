@@ -1,6 +1,7 @@
 package inggitsemut.cobaeventy.Activity;
 
 import android.os.Handler;
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,15 +14,20 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import inggitsemut.cobaeventy.Adapter.BannerAdapterPager;
+import inggitsemut.cobaeventy.Adapter.BannerHomeViewPagerAdapter;
 import inggitsemut.cobaeventy.Adapter.RecyclerViewMenuAdapter;
+import inggitsemut.cobaeventy.Models.BannerHome;
 import inggitsemut.cobaeventy.Models.Menu;
 import inggitsemut.cobaeventy.R;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
 
     // banner
-    ViewPager viewPagerBanner;
+    private ViewPager viewPagerBannerHome;
+    BannerHomeViewPagerAdapter bannerHomeViewPagerAdapter;
+    TabLayout tabLayoutIndicator;
+    int position = 0;
+
     List<Integer> dataImage = new ArrayList<>();
 
     // timer pada banner
@@ -35,6 +41,24 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        // banner
+        tabLayoutIndicator = findViewById(R.id.tab_indicator_banner_home);
+
+        final List<BannerHome> listBanner = new ArrayList<>();
+        listBanner.add(new BannerHome(R.drawable.a));
+        listBanner.add(new BannerHome(R.drawable.b));
+        listBanner.add(new BannerHome(R.drawable.c));
+
+        // setup viewpager
+        viewPagerBannerHome = findViewById(R.id.viewPagerBannerHome);
+        bannerHomeViewPagerAdapter  = new BannerHomeViewPagerAdapter(this, listBanner);
+        viewPagerBannerHome.setAdapter(bannerHomeViewPagerAdapter);
+
+        // setup tab layout with view pager
+        tabLayoutIndicator.setupWithViewPager(viewPagerBannerHome);
+
+
+        // MENU GRID
         listMenu = new ArrayList<>();
         listMenu.add(new Menu("MY QR", R.drawable.ic_action_barcode_2));
         listMenu.add(new Menu("AGENDA", R.drawable.ic_action_barcode_2));
@@ -55,16 +79,6 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         myrv.setLayoutManager(new GridLayoutManager(this,3));
         myrv.setAdapter(myAdapter);
 
-        // banner
-        viewPagerBanner = findViewById(R.id.viewPagerBanner);
-        dataImage.add(R.drawable.a);
-        dataImage.add(R.drawable.b);
-        dataImage.add(R.drawable.c);
-
-
-        BannerAdapterPager bannerAdapterPager = new BannerAdapterPager(this, dataImage);
-        viewPagerBanner.setAdapter(bannerAdapterPager);
-
         // slide show pada banner
         createSlideShow();
     }
@@ -74,11 +88,11 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         final Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                if (current_position == dataImage.size()){
+                if (current_position == listMenu.size()){
                     current_position = 0;
                 }
 
-                viewPagerBanner.setCurrentItem(current_position++,true);
+                viewPagerBannerHome.setCurrentItem(current_position++,true);
             }
         };
 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:card_view="http://schemas.android.com/tools"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    android:layout_marginLeft="16dp"
+    android:paddingLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:clickable="true"
+    card_view:cardUseCompatPadding="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foreground="?android:attr/selectableItemBackground"
+    >
+
+        <ImageView
+        android:id="@+id/img_banner_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+</android.support.v7.widget.CardView>
