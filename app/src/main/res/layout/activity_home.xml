@@ -11,17 +11,54 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbarHome"
+        <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:theme="@style/ToolbarTheme"
-            app:title="Home"
-            app:titleTextColor="@color/blue"
-            app:titleMarginStart="16dp"
-            >
-        </android.support.v7.widget.Toolbar>
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarHome"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                android:theme="@style/ToolbarTheme"
+                app:titleTextColor="@color/blue"
+                app:titleMarginStart="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:id="@+id/img_profile"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:src="@mipmap/ic_launcher_round"
+                        android:layout_gravity="center"
+                        android:layout_alignParentStart="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/event_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Event Management"
+                        android:layout_centerInParent="true"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="16dp"
+                        android:layout_toEndOf="@id/img_profile"
+                        android:textAlignment="center"
+
+                        />
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.AppBarLayout>
+
 
         <RelativeLayout
             android:layout_width="match_parent"

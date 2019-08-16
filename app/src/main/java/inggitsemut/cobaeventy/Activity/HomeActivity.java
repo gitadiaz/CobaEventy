@@ -1,5 +1,7 @@
 package inggitsemut.cobaeventy.Activity;
 
+import android.app.Notification;
+import android.content.Intent;
 import android.os.Handler;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -7,6 +9,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 
 import java.util.ArrayList;
@@ -21,6 +26,9 @@ import inggitsemut.cobaeventy.Models.Menu;
 import inggitsemut.cobaeventy.R;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
+
+    // toolbar
+    Toolbar toolbarHome;
 
     // banner
     private ViewPager viewPagerBannerHome;
@@ -39,6 +47,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        // toolbar
+        toolbarHome = findViewById(R.id.toolbarHome);
+        setSupportActionBar(toolbarHome);
         // banner
         tabLayoutIndicator = findViewById(R.id.tab_indicator_banner_home);
 
@@ -103,6 +114,24 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         }, 500, 3000);
 
     }
+    @Override
+    public boolean onCreateOptionsMenu(android.view.Menu menu) {
+
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_toolbar_home, menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.notification) {
+            Intent intentAbout = new Intent(HomeActivity.this, NotificationActivity.class);
+            startActivity(intentAbout);
+            return true;
+        }else return super.onOptionsItemSelected(item);
+    }
+
 
     @Override
     public void onClick(View v) {
