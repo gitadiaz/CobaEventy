@@ -11,7 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         >
-        <activity android:name=".Activity.NotificationActivity"></activity>
+        <activity android:name=".Activity.NotificationActivity"
+            android:parentActivityName=".Activity.HomeActivity"
+            android:theme="@style/AppTheme2"
+            android:label="Notification"
+            >
+
+        </activity>
         <activity
             android:name=".Activity.Gallery2Activity"
             android:parentActivityName=".Activity.GalleryActivity"
@@ -19,7 +25,8 @@
         <activity
             android:name=".Activity.GalleryActivity"
             android:parentActivityName=".Activity.HomeActivity"
-            android:theme="@style/AppTheme2"/>
+            android:theme="@style/AppTheme2"
+            android:label="Gallery"/>
         <activity
             android:name=".Activity.ForgotPasswordActivity"
             android:parentActivityName=".Activity.LoginActivity"
@@ -75,16 +82,21 @@
         <activity
             android:name=".Activity.MyBookingActivity"
             android:theme="@style/AppTheme2"
+            android:label="My Booking"
+            android:parentActivityName=".Activity.HomeActivity"
             />
         <activity
             android:name=".Activity.MyQRActivity"
             android:parentActivityName=".Activity.HomeActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"
+            android:label="My QR Code"/>
         <activity
             android:name=".Activity.DetailsProfileActivity"
             android:parentActivityName=".Activity.HomeActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme2"/>
+            android:theme="@style/AppTheme2"
+            android:label="Profile"/>
         <activity
             android:name=".Activity.HomeActivity"
             android:screenOrientation="portrait"

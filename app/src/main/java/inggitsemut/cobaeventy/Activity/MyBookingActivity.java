@@ -14,9 +14,6 @@ import inggitsemut.cobaeventy.R;
 
 public class MyBookingActivity extends AppCompatActivity {
 
-    android.support.v7.widget.Toolbar toolbar;
-    private Toolbar supportActionBar;
-
     private TabLayout tabLayout;
     private ViewPager viewPager;
 
@@ -24,9 +21,6 @@ public class MyBookingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_booking);
-
-        toolbar = findViewById(R.id.toolbarMyBooking);
-        setSupportActionBar(toolbar);
 
         tabLayout = findViewById(R.id.tabLayoutMyBooking);
         viewPager = findViewById(R.id.viewPagerMyBooking);
