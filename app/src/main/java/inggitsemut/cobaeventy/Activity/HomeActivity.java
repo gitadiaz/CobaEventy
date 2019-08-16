@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +30,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
     // toolbar
     Toolbar toolbarHome;
+    ImageView imgProfile;
 
     // banner
     private ViewPager viewPagerBannerHome;
@@ -50,6 +52,15 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         // toolbar
         toolbarHome = findViewById(R.id.toolbarHome);
         setSupportActionBar(toolbarHome);
+        imgProfile = findViewById(R.id.img_profile);
+        imgProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentProfile = new Intent(HomeActivity.this, DetailsProfileActivity.class);
+                startActivity(intentProfile);
+            }
+        });
+
         // banner
         tabLayoutIndicator = findViewById(R.id.tab_indicator_banner_home);
 

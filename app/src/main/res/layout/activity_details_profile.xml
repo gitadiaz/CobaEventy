@@ -30,7 +30,6 @@
                 android:text="GITA DIAZ PANGESTI"
                 android:layout_marginTop="16dp"
                 android:textSize="20sp"
-                android:textStyle="bold"
                 android:textColor="#000000"/>
 
             <TextView
