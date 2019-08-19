@@ -41,5 +41,11 @@ dependencies {
     // facebook login
     implementation 'com.facebook.android:facebook-login:[5,6)'
 
+    //API
+    // retrofit / network
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    //gson converter
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+
 
 }

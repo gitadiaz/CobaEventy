@@ -9,6 +9,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
+
 import java.util.List;
 
 import inggitsemut.cobaeventy.Models.ScreenItem;
@@ -34,9 +37,15 @@ public class IntroViewPagerAdapter extends PagerAdapter {
         TextView title = layoutScreen.findViewById(R.id.txt_title_intro);
         TextView description = layoutScreen.findViewById(R.id.txt_description_intro);
 
-        title.setText(mListScreen.get(position).getTitle());
-        description.setText(mListScreen.get(position).getDescription());
-        imgSlide.setImageResource(mListScreen.get(position).getImgIntro());
+        title.setText(mListScreen.get(position).getSplash_title());
+        description.setText(mListScreen.get(position).getSplash_desc());
+
+//        imgSlide.setImageResource(mListScreen.get(position).getImgIntro());
+
+        Glide.with(mContext)
+                .load(mListScreen.get(position).getSplash_image())
+                .apply(new RequestOptions())
+                .into(imgSlide);
 
         container.addView(layoutScreen);
 

@@ -32,7 +32,7 @@ public class IntroActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //cek udah pernah buka aplikasinya atau belum
+        //cek udah pernah buka aplikasinya atau belum untuk nampilin inro slider
         if (restorePrefData()){
             Intent intentMyActivity = new Intent(getApplicationContext(), HomeActivity.class);
             startActivity(intentMyActivity);
@@ -47,10 +47,32 @@ public class IntroActivity extends AppCompatActivity {
         btnAnimation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.button_animation);
 
         // fill list screen
+
+//        Service service = getClient().create(Service.class);
+//
+//        final Call<ScreenItem> callIntroSlider = service.getIntroSlider();
+//
+//        callIntroSlider.enqueue(new Callback<ScreenItem>() {
+//            @Override
+//            public void onResponse(Call<ScreenItem> call, Response<ScreenItem> response) {
+//                final List<ScreenItem> mList = new ArrayList<>();
+//                for (i=0; i<response.body(); i++){
+//                    mList.add(new ScreenItem(response.body().getTitle(), response.body().getDescription(), R.drawable.scan));
+//                }
+//
+//            }
+//
+//            @Override
+//            public void onFailure(Call<ScreenItem> call, Throwable t) {
+//                Toast.makeText(IntroActivity.this, "gagal", Toast.LENGTH_LONG).show();
+//            }
+//
+//
+//        });
         final List<ScreenItem> mList = new ArrayList<>();
-        mList.add(new ScreenItem("Scan", "Lorem ipsum dolor sit amet, eu nihil prompta vix, ne tacimates imperdiet vel, eu vis simul veniam regione. Postulant efficiendi sed at, eius liber bonorum id quo, mei ad noluisse patrioque. ", R.drawable.scan));
-        mList.add(new ScreenItem("Search", "Lorem ipsum dolor sit amet, eu nihil prompta vix, ne tacimates imperdiet vel, eu vis simul veniam regione. Postulant efficiendi sed at, eius liber bonorum id quo, mei ad noluisse patrioque.", R.drawable.search));
-        mList.add(new ScreenItem("Navigate", "Lorem ipsum dolor sit amet, eu nihil prompta vix, ne tacimates imperdiet vel, eu vis simul veniam regione. Postulant efficiendi sed at, eius liber bonorum id quo, mei ad noluisse patrioque.", R.drawable.navigate));
+        mList.add(new ScreenItem("Scan", "Lorem ipsum dolor sit amet, eu nihil prompta vix, ne tacimates imperdiet vel, eu vis simul veniam regione. Postulant efficiendi sed at, eius liber bonorum id quo, mei ad noluisse patrioque. ", "https://images.genius.com/5b8ea872faf17e09914610774e46dbad.1000x1000x1.jpg"));
+        mList.add(new ScreenItem("Search", "Lorem ipsum dolor sit amet, eu nihil prompta vix, ne tacimates imperdiet vel, eu vis simul veniam regione. Postulant efficiendi sed at, eius liber bonorum id quo, mei ad noluisse patrioque.", "https://images.genius.com/5b8ea872faf17e09914610774e46dbad.1000x1000x1.jpg"));
+        mList.add(new ScreenItem("Navigate", "Lorem ipsum dolor sit amet, eu nihil prompta vix, ne tacimates imperdiet vel, eu vis simul veniam regione. Postulant efficiendi sed at, eius liber bonorum id quo, mei ad noluisse patrioque.", "https://images.genius.com/5b8ea872faf17e09914610774e46dbad.1000x1000x1.jpg"));
 
         // setup viewpager
         viewPagerIntro = findViewById(R.id.viewPagerIntroSlider);
