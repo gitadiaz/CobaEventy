@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 import java.util.List;
 
-import inggitsemut.cobaeventy.Models.BannerHome;
+import inggitsemut.cobaeventy.Model.BannerHome;
 import inggitsemut.cobaeventy.R;
 
 public class BannerHomeViewPagerAdapter extends PagerAdapter {

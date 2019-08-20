@@ -1,9 +1,4 @@
-package inggitsemut.cobaeventy.Models;
-
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-
-import java.util.List;
+package inggitsemut.cobaeventy.Model;
 
 public class ScreenItem {
 //    @Expose

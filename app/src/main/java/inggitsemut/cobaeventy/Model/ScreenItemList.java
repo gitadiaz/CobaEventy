@@ -1,4 +1,4 @@
-package inggitsemut.cobaeventy.Models;
+package inggitsemut.cobaeventy.Model;
 
 import java.util.ArrayList;
 

@@ -13,13 +13,12 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import inggitsemut.cobaeventy.Adapter.IntroViewPagerAdapter;
 import inggitsemut.cobaeventy.Api.ConfigUtils;
 import inggitsemut.cobaeventy.Api.Service;
-import inggitsemut.cobaeventy.Models.ScreenItem;
-import inggitsemut.cobaeventy.Models.ScreenItemList;
+import inggitsemut.cobaeventy.Model.ScreenItem;
+import inggitsemut.cobaeventy.Model.ScreenItemList;
 import inggitsemut.cobaeventy.R;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -41,7 +40,7 @@ public class IntroActivity extends AppCompatActivity {
 
         //cek udah pernah buka aplikasinya atau belum untuk nampilin inro slider
         if (restorePrefData()){
-            Intent intentMyActivity = new Intent(getApplicationContext(), HomeActivity.class);
+            Intent intentMyActivity = new Intent(getApplicationContext(), LoginActivity.class);
             startActivity(intentMyActivity);
             finish();
         }

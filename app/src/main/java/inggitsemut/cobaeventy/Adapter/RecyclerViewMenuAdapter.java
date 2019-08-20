@@ -14,7 +14,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import inggitsemut.cobaeventy.Activity.DetailsProfileActivity;
-import inggitsemut.cobaeventy.Models.Menu;
+import inggitsemut.cobaeventy.Model.Menu;
 import inggitsemut.cobaeventy.Activity.MyBookingActivity;
 import inggitsemut.cobaeventy.Activity.MyQRActivity;
 import inggitsemut.cobaeventy.R;

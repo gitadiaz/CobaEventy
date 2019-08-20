@@ -1,6 +1,5 @@
 package inggitsemut.cobaeventy.Activity;
 
-import android.app.Notification;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.design.widget.TabLayout;
@@ -22,8 +21,8 @@ import java.util.TimerTask;
 
 import inggitsemut.cobaeventy.Adapter.BannerHomeViewPagerAdapter;
 import inggitsemut.cobaeventy.Adapter.RecyclerViewMenuAdapter;
-import inggitsemut.cobaeventy.Models.BannerHome;
-import inggitsemut.cobaeventy.Models.Menu;
+import inggitsemut.cobaeventy.Model.BannerHome;
+import inggitsemut.cobaeventy.Model.Menu;
 import inggitsemut.cobaeventy.R;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
@@ -134,6 +133,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         return true;
     }
 
+    // btn notification clicked
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.notification) {

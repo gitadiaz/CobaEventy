@@ -14,7 +14,7 @@ import com.bumptech.glide.request.RequestOptions;
 
 import java.util.List;
 
-import inggitsemut.cobaeventy.Models.ScreenItem;
+import inggitsemut.cobaeventy.Model.ScreenItem;
 import inggitsemut.cobaeventy.R;
 
 public class IntroViewPagerAdapter extends PagerAdapter {

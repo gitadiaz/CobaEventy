@@ -15,9 +15,10 @@
         android:text="eventy"
         android:fontFamily="@font/montserrat_bold"
         android:textColor="#ffffff"
-        android:textSize="48dp"
+        android:textSize="40dp"
         android:layout_marginTop="60dp"
         android:layout_marginLeft="16dp"
+        android:paddingHorizontal="16dp"
         />
 
     <LinearLayout
@@ -25,12 +26,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/logo"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/rounded_top"
         android:orientation="vertical"
-        android:paddingLeft="16dp"
-        android:paddingTop="32dp"
-        android:paddingRight="16dp">
+        android:paddingHorizontal="32dp"
+        android:paddingTop="32dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -38,39 +38,18 @@
             android:layout_marginBottom="16dp"
             android:fontFamily="@font/montserrat_regular"
             android:text="Sign up"
-            android:textSize="18sp"
-            android:textColor="#2d2d2d" />
+            android:textColor="#2d2d2d"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/et_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#BDBDBD"
+            android:fontFamily="@font/montserrat_regular"
             android:hint="Username"
-            android:textSize="18sp"
-            android:fontFamily="@font/montserrat_regular"
-            android:inputType="text" />
-
-        <EditText
-            android:id="@+id/et_mobile_phone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#BDBDBD"
-            android:hint="Phone Number"
-            android:textSize="18sp"
-            android:fontFamily="@font/montserrat_regular"
-            android:inputType="phone" />
-
-        <EditText
-            android:id="@+id/et_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#BDBDBD"
-            android:hint="Email"
-            android:textSize="18sp"
-            android:fontFamily="@font/montserrat_regular"
-            android:inputType="textEmailAddress" />
-
+            android:inputType="text"
+            android:textSize="14sp" />
 
         <EditText
             android:id="@+id/et_password"
@@ -80,28 +59,40 @@
             android:backgroundTint="#BDBDBD"
             android:hint="Password"
             android:inputType="textPassword"
+            android:textSize="14sp"
             android:fontFamily="@font/montserrat_regular"
             />
 
-
         <EditText
-            android:id="@+id/et_confirm_password"
+            android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
             android:backgroundTint="#BDBDBD"
-            android:hint="Confirm Password"
-            android:inputType="textPassword"
+            android:hint="Email"
+            android:textSize="14sp"
             android:fontFamily="@font/montserrat_regular"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:id="@+id/et_mobile_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#BDBDBD"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:textSize="14sp"
             />
 
         <Button
             android:id="@+id/btn_sign_up"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="44dp"
             android:layout_marginTop="36dp"
             android:background="@drawable/rounded_yellow"
             android:text="Sign up"
+            android:textSize="12sp"
             android:fontFamily="@font/montserrat_regular"
             />
     </LinearLayout>
@@ -120,6 +111,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Already have an account?"
+            android:textSize="12sp"
             android:fontFamily="@font/montserrat_regular"
             />
 
@@ -132,6 +124,7 @@
             android:layout_marginLeft="4dp"
             android:textColor="@color/yellow"
             android:fontFamily="@font/montserrat_regular"
+            android:textSize="12sp"
             />
 
     </LinearLayout>
