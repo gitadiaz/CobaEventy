@@ -79,19 +79,18 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
         // MENU GRID
         listMenu = new ArrayList<>();
-        listMenu.add(new Menu("MY QR", R.drawable.ic_action_barcode_2));
-        listMenu.add(new Menu("AGENDA", R.drawable.ic_action_barcode_2));
-        listMenu.add(new Menu("GALLERY", R.drawable.ic_action_barcode_2));
-        listMenu.add(new Menu("SLIDES", R.drawable.ic_action_barcode_2));
-        listMenu.add(new Menu("MAPS", R.drawable.ic_action_barcode_2));
-        listMenu.add(new Menu("MEMBER", R.drawable.ic_action_barcode_2));
-        listMenu.add(new Menu("SURVEY", R.drawable.ic_action_barcode_2));
-        listMenu.add(new Menu("QUIZ", R.drawable.ic_action_barcode_2));
-        listMenu.add(new Menu("FEEDBACK", R.drawable.ic_action_barcode_2));
-        listMenu.add(new Menu("QnA", R.drawable.ic_action_barcode_2));
-        listMenu.add(new Menu("SOUVENIR", R.drawable.ic_action_barcode_2));
-        listMenu.add(new Menu("HELP", R.drawable.ic_action_barcode_2));
-        listMenu.add(new Menu("ABOUT", R.drawable.ic_action_barcode_2));
+        listMenu.add(new Menu("Barcode", R.drawable.ic_action_barcode_2));
+        listMenu.add(new Menu("Agenda", R.drawable.ic_action_barcode_2));
+        listMenu.add(new Menu("Message", R.drawable.ic_action_barcode_2));
+        listMenu.add(new Menu("Maps", R.drawable.ic_action_barcode_2));
+        listMenu.add(new Menu("Gallery", R.drawable.ic_action_barcode_2));
+        listMenu.add(new Menu("Document", R.drawable.ic_action_barcode_2));
+        listMenu.add(new Menu("Quiz", R.drawable.ic_action_barcode_2));
+        listMenu.add(new Menu("Souvenir", R.drawable.ic_action_barcode_2));
+        listMenu.add(new Menu("Feedback", R.drawable.ic_action_barcode_2));
+        listMenu.add(new Menu("Survey", R.drawable.ic_action_barcode_2));
+        listMenu.add(new Menu("About", R.drawable.ic_action_barcode_2));
+        listMenu.add(new Menu("Help", R.drawable.ic_action_barcode_2));
 
         RecyclerView myrv = findViewById(R.id.id_recycler_view);
         RecyclerViewMenuAdapter myAdapter = new RecyclerViewMenuAdapter(this, listMenu);

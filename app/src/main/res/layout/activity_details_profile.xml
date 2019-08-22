@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.DetailsProfileActivity">
+    tools:context=".Activity.DetailsProfileActivity"
+    android:background="#F0F0F0"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_white"
+        android:layout_margin="16dp"
+        >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ffffff"
             android:gravity="center"
             android:padding="32dp"
             android:orientation="vertical">
@@ -29,37 +31,34 @@
                 android:layout_height="wrap_content"
                 android:text="GITA DIAZ PANGESTI"
                 android:layout_marginTop="16dp"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textColor="#000000"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:text="CEO | Gmail"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="12sp"
                 android:text="gitadiazp@gmail.com"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DEMO | Eventy"/>
+                android:textSize="12sp"
+                android:text="082298176450"/>
 
         </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Profile"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:textSize="16sp"
-            android:textColor="#000000"
-            />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ffffff"
             android:orientation="vertical"
             android:paddingLeft="16dp"
             android:paddingBottom="16dp"
@@ -73,18 +72,12 @@
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp">
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_history"/>
-
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="Session History"
                     android:layout_gravity="center"
-                    android:textSize="16sp"
-                    android:textColor="#000000"
+                    android:textSize="14sp"
                     android:layout_marginLeft="16dp"
                     android:layout_weight="4"
                     />
@@ -109,18 +102,13 @@
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp">
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_edit"/>
 
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="Edit Profile"
                     android:layout_gravity="center"
-                    android:textSize="16sp"
-                    android:textColor="#000000"
+                    android:textSize="14sp"
                     android:layout_marginLeft="16dp"
                     android:layout_weight="4"
                     />
@@ -145,18 +133,12 @@
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp">
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_lock_outline"/>
-
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="Change Password"
                     android:layout_gravity="center"
-                    android:textSize="16sp"
-                    android:textColor="#000000"
+                    android:textSize="14sp"
                     android:layout_marginLeft="16dp"
                     android:layout_weight="4"
                     />
@@ -174,54 +156,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:background="#e6e6e6"/>
-
         </LinearLayout>
 
-        <!--logout-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#ffffff"
-            android:orientation="vertical"
-            android:paddingLeft="16dp"
-            android:paddingBottom="8dp"
-            android:paddingTop="8dp"
-
-            android:layout_marginTop="40dp"
-            >
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_exit_to_app"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Log Out"
-                    android:layout_gravity="center"
-                    android:textSize="16sp"
-                    android:textColor="#FF0000"
-                    android:layout_marginLeft="16dp"
-                    />
-            </LinearLayout>
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:layout_marginBottom="16dp"
-            android:text="Eventy.remake"
-            android:gravity="center"/>
-
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="36dp"
+            android:text="Log Out"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_redpink"
+            />
     </LinearLayout>
-
 </ScrollView>
