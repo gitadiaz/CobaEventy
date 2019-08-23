@@ -47,5 +47,7 @@ dependencies {
     //gson converter
     implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
 
+    // dots indicator
+    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:3.0.3'
 
 }

@@ -14,6 +14,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.tbuonomo.viewpagerdotsindicator.DotsIndicator;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
@@ -34,8 +36,11 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     // banner
     private ViewPager viewPagerBannerHome;
     BannerHomeViewPagerAdapter bannerHomeViewPagerAdapter;
-    TabLayout tabLayoutIndicator;
+//    TabLayout tabLayoutIndicator;
+    DotsIndicator dotsIndicator;
     int position = 0;
+
+
 
     // timer pada banner
     private Timer timer;
@@ -61,7 +66,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         });
 
         // banner
-        tabLayoutIndicator = findViewById(R.id.tab_indicator_banner_home);
+//        tabLayoutIndicator = findViewById(R.id.tab_indicator_banner_home);
+        dotsIndicator = findViewById(R.id.tab_indicator_banner_home);
 
         final List<BannerHome> listBanner = new ArrayList<>();
         listBanner.add(new BannerHome(R.drawable.a));
@@ -74,7 +80,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         viewPagerBannerHome.setAdapter(bannerHomeViewPagerAdapter);
 
         // setup tab layout with view pager
-        tabLayoutIndicator.setupWithViewPager(viewPagerBannerHome);
+//        tabLayoutIndicator.setupWithViewPager(viewPagerBannerHome);
+        dotsIndicator.setViewPager(viewPagerBannerHome);
 
 
         // MENU GRID
