@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import inggitsemut.cobaeventy.Activity.AgendaActivity;
 import inggitsemut.cobaeventy.Activity.DetailsProfileActivity;
 import inggitsemut.cobaeventy.Model.Menu;
 import inggitsemut.cobaeventy.Activity.MyBookingActivity;
@@ -49,16 +50,16 @@ public class RecyclerViewMenuAdapter extends RecyclerView.Adapter<RecyclerViewMe
             public void onClick(View v) {
 
                 if (position==0){
+                    // barcode
                     Intent intentQR = new Intent(mContext, MyQRActivity.class);
                     mContext.startActivity(intentQR);
                 }
                 else if (position==1){
                     // open activity agenda
-                    // pake activity details dulu
-                    Intent intentAgenda = new Intent(mContext, DetailsProfileActivity.class);
+                    Intent intentAgenda = new Intent(mContext, AgendaActivity.class);
                     mContext.startActivity(intentAgenda);
                 }else if (position==2){
-                    // gallery
+                    // message
                     //open activity my Booking activity
                     Intent intentMyBooking = new Intent(mContext, MyBookingActivity.class);
                     mContext.startActivity(intentMyBooking);

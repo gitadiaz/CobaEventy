@@ -65,8 +65,4 @@ public class RecyclerViewBannerAdapter extends RecyclerView.Adapter<RecyclerView
             imgBannerHome = itemView.findViewById(R.id.img_banner_home);
         }
     }
-
-
-
-
 }
