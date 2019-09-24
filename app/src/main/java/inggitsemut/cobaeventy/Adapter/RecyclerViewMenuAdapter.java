@@ -15,6 +15,7 @@ import java.util.List;
 
 import inggitsemut.cobaeventy.Activity.AgendaActivity;
 import inggitsemut.cobaeventy.Activity.DetailsProfileActivity;
+import inggitsemut.cobaeventy.Activity.QuizActivity;
 import inggitsemut.cobaeventy.Model.Menu;
 import inggitsemut.cobaeventy.Activity.MyBookingActivity;
 import inggitsemut.cobaeventy.Activity.MyQRActivity;
@@ -63,6 +64,10 @@ public class RecyclerViewMenuAdapter extends RecyclerView.Adapter<RecyclerViewMe
                     //open activity my Booking activity
                     Intent intentMyBooking = new Intent(mContext, MyBookingActivity.class);
                     mContext.startActivity(intentMyBooking);
+                }else if (position==6){
+                    // quiz
+                    Intent intentQuiz = new Intent(mContext, QuizActivity.class);
+                    mContext.startActivity(intentQuiz);
                 }else{
                     Intent intentAgenda = new Intent(mContext, DetailsProfileActivity.class);
                     mContext.startActivity(intentAgenda);

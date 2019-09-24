@@ -39,6 +39,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 //    TabLayout tabLayoutIndicator;
     DotsIndicator dotsIndicator;
     int position = 0;
+    List<BannerHome> listBanner;
 
 
 
@@ -69,7 +70,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 //        tabLayoutIndicator = findViewById(R.id.tab_indicator_banner_home);
         dotsIndicator = findViewById(R.id.tab_indicator_banner_home);
 
-        final List<BannerHome> listBanner = new ArrayList<>();
+        listBanner = new ArrayList<>();
         listBanner.add(new BannerHome(R.drawable.a));
         listBanner.add(new BannerHome(R.drawable.b));
         listBanner.add(new BannerHome(R.drawable.c));
@@ -113,7 +114,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         final Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                if (current_position == listMenu.size()){
+                if (current_position == listBanner.size()){
                     current_position = 0;
                 }
 

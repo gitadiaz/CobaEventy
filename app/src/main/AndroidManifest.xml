@@ -2,36 +2,51 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="inggitsemut.cobaeventy">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
-        <activity android:name=".Activity.MessageActivity"
+        <activity android:name=".Activity.QuizQuestionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"></activity>
+        <activity
+            android:name=".Activity.QuizActivity"
+            android:label="Quiz"
+            android:parentActivityName=".Activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activity.MessageActivity"
             android:label="Message"
             android:parentActivityName=".Activity.HomeActivity"
-            android:theme="@style/AppTheme2">
-
-        </activity>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
         <activity
             android:name=".Activity.AgendaActivity"
             android:label="Schedule"
             android:parentActivityName=".Activity.HomeActivity"
-            android:theme="@style/AppTheme2"></activity>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
         <activity
             android:name=".Activity.NotificationActivity"
             android:label="Notification"
             android:parentActivityName=".Activity.HomeActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme2" />
         <activity
             android:name=".Activity.Gallery2Activity"
             android:parentActivityName=".Activity.GalleryActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme2" />
         <activity
             android:name=".Activity.GalleryActivity"
             android:label="Gallery"
             android:parentActivityName=".Activity.HomeActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme2" />
         <activity
             android:name=".Activity.ForgotPasswordActivity"
@@ -106,7 +121,5 @@
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
     </application>
-
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
