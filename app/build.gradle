@@ -53,4 +53,7 @@ dependencies {
     // dots indicator
     implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:3.0.3'
 
+    // progress bar rounded
+    implementation 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+
 }

@@ -6,13 +6,15 @@ import android.os.Bundle;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar;
+
 import inggitsemut.cobaeventy.Animation.ProgressBarAnimation;
 import inggitsemut.cobaeventy.R;
 
 public class QuizQuestionActivity extends AppCompatActivity {
 
     TextView tvQuizName, tvTime;
-    ProgressBar progressBar;
+    RoundCornerProgressBar progressBar;
 
 
     @Override

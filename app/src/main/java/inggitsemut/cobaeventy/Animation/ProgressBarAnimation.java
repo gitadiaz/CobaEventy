@@ -8,14 +8,16 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar;
+
 public class ProgressBarAnimation extends Animation {
 
     private Context context;
-    private ProgressBar progressBar;
+    private RoundCornerProgressBar progressBar;
     private TextView tvTime;
     private float from, to;
 
-    public ProgressBarAnimation(Context context, ProgressBar progressBar, TextView tvTime, float from, float to) {
+    public ProgressBarAnimation(Context context, RoundCornerProgressBar progressBar, TextView tvTime, float from, float to) {
         this.context = context;
         this.progressBar = progressBar;
         this.tvTime = tvTime;
