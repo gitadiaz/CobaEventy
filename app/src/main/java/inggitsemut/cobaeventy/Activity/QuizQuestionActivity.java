@@ -34,15 +34,15 @@ public class QuizQuestionActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progress_bar);
         tvTime = findViewById(R.id.tv_time);
 
-        progressBar.setMax(15);
+        progressBar.setMax(150);
         progressBar.setRotation(180);
-        progressBar.setProgress(15);
+        progressBar.setProgress(150);
 
         progressAnimation();
     }
 
     public void progressAnimation(){
-        ProgressBarAnimation anim = new ProgressBarAnimation(this, progressBar, tvTime, 15f, 0f);
+        ProgressBarAnimation anim = new ProgressBarAnimation(this, progressBar, tvTime, 150f, 0f);
         anim.setDuration(15000);
         anim.setInterpolator(new LinearInterpolator());
         progressBar.setAnimation(anim);

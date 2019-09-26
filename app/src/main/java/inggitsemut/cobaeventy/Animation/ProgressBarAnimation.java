@@ -30,9 +30,56 @@ public class ProgressBarAnimation extends Animation {
         super.applyTransformation(interpolatedTime, t);
         float value = from + (to - from) * interpolatedTime;
         progressBar.setProgress((int)value);
-        tvTime.setText((int)value+"s");
 
+        switch ((int)value){
+            case 150:
+                tvTime.setText((int)value/10+"s");
+                break;
+            case 140:
+                tvTime.setText((int)value/10+"s");
+                break;
+            case 130:
+                tvTime.setText((int)value/10+"s");
+                break;
+            case 120:
+                tvTime.setText((int)value/10+"s");
+                break;
+            case 110:
+                tvTime.setText((int)value/10+"s");
+                break;
+            case 100:
+                tvTime.setText((int)value/10+"s");
+                break;
+            case 90:
+                tvTime.setText((int)value/10+"s");
+                break;
+            case 80:
+                tvTime.setText((int)value/10+"s");
+                break;
+            case 70:
+                tvTime.setText((int)value/10+"s");
+                break;
+            case 60:
+                tvTime.setText((int)value/10+"s");
+                break;
+            case 50:
+                tvTime.setText((int)value/10+"s");
+                break;
+            case 40:
+                tvTime.setText((int)value/10+"s");
+                break;
+            case 30:
+                tvTime.setText((int)value/10+"s");
+                break;
+            case 20:
+                tvTime.setText((int)value/10+"s");
+                break;
+            case 10:
+                tvTime.setText((int)value/10+"s");
+                break;
+        }
         if (value == to){
+            tvTime.setText((int)value+"s");
             Toast.makeText(context, "Waktumu habis!", Toast.LENGTH_SHORT).show();
         }
     }
