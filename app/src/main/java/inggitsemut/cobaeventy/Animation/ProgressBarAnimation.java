@@ -30,7 +30,7 @@ public class ProgressBarAnimation extends Animation {
         super.applyTransformation(interpolatedTime, t);
         float value = from + (to - from) * interpolatedTime;
         progressBar.setProgress((int)value);
-        tvTime.setText((int)value+" %");
+        tvTime.setText((int)value+"s");
 
         if (value == to){
             Toast.makeText(context, "Waktumu habis!", Toast.LENGTH_SHORT).show();

@@ -3,6 +3,7 @@ package inggitsemut.cobaeventy.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.animation.LinearInterpolator;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -33,15 +34,17 @@ public class QuizQuestionActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progress_bar);
         tvTime = findViewById(R.id.tv_time);
 
-        progressBar.setMax(100);
-        progressBar.setScaleY(3f);
+        progressBar.setMax(15);
+        progressBar.setRotation(180);
+        progressBar.setProgress(15);
 
         progressAnimation();
     }
 
     public void progressAnimation(){
-        ProgressBarAnimation anim = new ProgressBarAnimation(this, progressBar, tvTime, 0f, 100f);
-        anim.setDuration(10000);
+        ProgressBarAnimation anim = new ProgressBarAnimation(this, progressBar, tvTime, 15f, 0f);
+        anim.setDuration(15000);
+        anim.setInterpolator(new LinearInterpolator());
         progressBar.setAnimation(anim);
     }
 }

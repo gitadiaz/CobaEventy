@@ -198,30 +198,33 @@
 <!--        android:id="@+id/progress_bar"-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="6dp"-->
-<!--        android:layout_alignParentBottom="true"-->
 <!--        style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
 <!--        android:progressTint="@color/blue"-->
 <!--        android:progressBackgroundTint="@color/blue_ashy"-->
 <!--        android:progressDrawable="@drawable/rounded_corners_progress_bar"-->
-<!--        android:layout_marginBottom="16dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:layout_below="@id/layout_answer"-->
+<!--        android:progress="100"-->
 <!--        />-->
 
     <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
         android:id="@+id/progress_bar"
         android:layout_width="match_parent"
-        android:layout_height="4dp"
+        android:layout_height="6dp"
         app:rcRadius="16dp"
         app:rcProgressColor="@color/blue"
         app:rcBackgroundColor="@color/blue_ashy"
         android:layout_marginTop="32dp"
         android:layout_below="@id/layout_answer"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp"
+        />
 
     <TextView
         android:id="@+id/tv_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0%"
+        android:text="15s"
         android:textSize="16sp"
         android:layout_alignParentRight="true"
         android:layout_below="@id/progress_bar"
